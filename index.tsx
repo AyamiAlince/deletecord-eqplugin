@@ -12,7 +12,7 @@ import { definePluginSettings } from "@api/Settings";
 import { Button } from "@components/Button";
 import { Flex } from "@components/Flex";
 import { FormSwitch } from "@components/FormSwitch";
-import { HeadingTertiary } from "@components/Heading";
+import { Heading } from "@components/Heading";
 import { Paragraph } from "@components/Paragraph";
 import { classNameFactory } from "@utils/css";
 import definePlugin, { OptionType } from "@utils/types";
@@ -127,7 +127,7 @@ function startPurge() {
 function Field({ label, children }: { label: string; children: React.ReactNode; }) {
     return (
         <section className={cl("field")}>
-            <HeadingTertiary>{label}</HeadingTertiary>
+            <Heading tag="h4">{label}</Heading>
             <Flex gap={8} alignItems="center">{children}</Flex>
         </section>
     );
